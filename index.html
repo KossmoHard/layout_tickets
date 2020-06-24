@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="./css/popup.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/tickets.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-2.css">
+	<link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/icons.css">
+	<link rel="stylesheet" href="./css/fonts.css">
+<link rel="stylesheet" type="text/css" href="./js/jquery-ui/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./js/jquery-ui/jquery-ui.structure.min.css">
+<link rel="stylesheet" type="text/css" href="./js/jquery-ui/jquery-ui.theme.min.css">
+<script src="./js/datepicker.min.js"></script>
+	<title>Tickets</title>
+</head>
+<body>
+	<div class = "wrapper">
+    <header class="header-box __bg-option" style="background-image: url(img/header.jpg)">
+        <div class="container">
+            <a class="logo" href="/">
+                <img src="img/log.png" alt="logos">
+            </a>
+            <div class="header-nav">
+                <div class="header-nav-inner">
+                    <div class="header-name">Flights</div>
+                    <div class="header-lang">
+                        <ul class="lang-menu">
+                            <li>
+                                <span class="chosen-m">en</span>
+                                <ul class="lang-menu-sub">
+                                    <li><a href="#">ru</a></li>
+                                    <li><a href="#">ua</a></li>
+                                    <li><a href="#">pl</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="icon-box">
+                            <a href="#">
+                                <img src="img/facebook.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/youtube.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/instagram.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="box-search">
+        <div class="container">
+            <form class="form-search">
+                <div class="__margin-bootom ">
+                    <div class="inline">
+                        <input type="radio" id="one_way" name="way">
+                        <label for="one_way" class="__white">One Way</label>
+                    </div>
+                    <div class="inline">
+                        <input type="radio" id="round_trip" name="way">
+                        <label for="round_trip" class="__white">Round Trip</label>
+                    </div>
+                    <div class="inline">
+                        <input type="radio" id="multi_city" name="way">
+                        <label for="multi_city" class="__white">Multi-City</label>
+                    </div>
+                </div>
+                <div class="row-flex">
+                    <div class="col-flex-md-4 col-flex-sm-4 col-flex-xs-12">
+                        <div class="row-flex">
+                            <div class="col-flex-xs-12">
+                                <div class="form-box __search">
+                                    <i class="icn icn-map"></i>
+                                    <input type="text" name="city" placeholder="Kiev, Ukraine">
+                                </div>
+                            </div>
+                            <div class="col-flex-md-6 col-flex-sm-6 col-flex-xs-12">
+                                <div class="form-box __search">
+                                    <i class="icn icn-date"></i>
+                                    <input type="text" name="date" placeholder="Date">
+                                </div>
+                            </div>
+                            <div class="col-flex-md-6 col-flex-sm-6 col-flex-xs-12">
+                                <div class="form-box __search">
+                                     <i class="icn icn-time"></i>
+                                    <input type="text" name="exand_date" placeholder="Exand date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-flex-md-1 col-flex-sm-1 col-flex-xs-12">
+                        <div class="row-flex">
+                            <div class="col-flex-xs-12">
+                                <div class="box-load form-box">
+                                    <i class="icn-loader"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-flex-md-5 col-flex-sm-5 col-flex-xs-12">
+                         <div class="row-flex">
+                            <div class="col-flex-md-8 col-flex-sm-8 col-flex-xs-12">
+                                <div class="form-box __search">
+                                     <i class="icn icn-map"></i>
+                                    <input type="text" name="city-to" placeholder="To">
+                                </div>
+                            </div>
+                            <div class="col-flex-md-4 col-flex-sm-4 col-flex-xs-12">
+                                <div class="form-box __search">
+                                    <i class="icn icn-star"></i>
+                                    <input type="text" name="any" placeholder="Any">
+                                </div>
+                            </div>
+                            <div class="col-flex-md-4 col-flex-sm-4 col-flex-xs-12">
+                                <div class="form-box __search">
+                                     <i class="icn icn-date"></i>
+                                    <input type="text" name="date-to" placeholder="Date">
+                                </div>
+                            </div>
+                            <div class="col-flex-md-4 col-flex-sm-4 col-flex-xs-12">
+                                <div class="form-box __search">
+                                     <i class="icn icn-time"></i>
+                                    <input type="text" name="exand_date_to" placeholder="Exand date">
+                                </div>
+                            </div>
+                             <div class="col-flex-md-4 col-flex-sm-4 col-flex-xs-12">
+                                <div class="form-box __search">
+                                    <i class="icn icn-man"></i>
+                                    <input type="text" name="person" placeholder="1 person">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-flex-md-2 col-flex-sm-2 col-flex-xs-12">
+                        <div class="row-flex">
+                            <div class="col-flex-xs-12">
+                                <div class="form-box">
+                                    <button class="btn-black">search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <section class = "popular-container">
+        <div class="container">
+					<h1 class="title-wrapper">CHEAPEST TICKETS TO THE MOST POPULAR DESTINATIONS</h2>
+            <div class="box-wrapper">
+                <ul class="popular-tab js-tab">
+                    <li class="active col-xs-in-9" data-item="1">Baku</li>
+                    <li class="col-xs-in-9" data-item="2">Istanbul</li>
+                    <li class="col-xs-in-9" data-item="3">Bangkok</li>
+                    <li class="col-xs-in-9" data-item="4">Barcelona</li>
+                    <li class="col-xs-in-9" data-item="5">Odessa</li>
+                    <li class="col-xs-in-9" data-item="6">Odessa</li>
+                    <li class="col-xs-in-9" data-item="7">Odessa</li>
+                    <li class="col-xs-in-9" data-item="8">Odessa</li>
+                </ul>
+                <div class="popular-tab-content-box">
+                    <ul class="popular-tab-content js-tab-content active" data-item="1">
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane"></i>
+                                Baku
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane"></i>
+                                Baku
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane"></i>
+                                Baku
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane"></i>
+                                Baku
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane"></i>
+                                Baku
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane"></i>
+                                Baku
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane"></i>
+                                Baku
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane"></i>
+                                Baku
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane"></i>
+                                Baku
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="popular-tab-content js-tab-content" data-item="2">
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane"></i>
+                                Istanbul
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Istanbul
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Istanbul
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Istanbul
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Istanbul
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Istanbul
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Istanbul
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Istanbul
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Istanbul
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="popular-tab-content js-tab-content" data-item="3">
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Bangkok
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Bangkok
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Bangkok
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Bangkok
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Bangkok
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Bangkok
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Bangkok
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Bangkok
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Bangkok
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="popular-tab-content js-tab-content" data-item="4">
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Barcelona
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Barcelona
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Barcelona
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Barcelona
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Barcelona
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Barcelona
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Barcelona
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Barcelona
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Barcelona
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="popular-tab-content js-tab-content" data-item="5">
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="popular-tab-content js-tab-content" data-item="6">
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="popular-tab-content js-tab-content" data-item="7">
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="popular-tab-content js-tab-content" data-item="8">
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="popular-tab-content js-tab-content" data-item="9">
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kiev
+                                    <i class="black-plane" ></i>
+                                Odessa
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+								<div class = "block-country row">
+									  <div class = "col-sm-12 col-lg-12">
+												<div class = "first-block">
+														<h4 class = "heading-country">Dubai</h4>
+												</div>
+										</div>
+										<div class = "col-sm-12 col-lg-6">
+												<div class = "second-block">
+													<a href = "#" class = "button-search">Search</a>
+												</div>
+										</div>
+										<div class = "col-sm-12 col-lg-6">
+												<div class = "third-block">
+														<h4 class = "heading-country">London</h4>
+												</div>
+										</div>
+								</div>
+            </div>
+        </div>
+    </section>
+		<section>
+			<!-- Bootstrap 4 -->
+				<div id="carousel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+							<div class = "carousel-text">
+								<h3 class = "carousel-title">Find cheap flights from <span>1000s</span> of airlines and travel agents</h3>
+								<p><span>Tickets</span> is the fast growing online flight booking service, available at one touch. For fast and safe bookings of your Flight tickets, experience our service and book on the GO!</p>
+							</div>
+							<img class="img-fluid" src="img/slide-1-1.png" alt="...">
+					</div>
+					<div class="carousel-item">
+							<div class = "carousel-text">
+								<h3 class = "carousel-title">Find cheap flights from <span>1000s</span> of airlines and travel agents</h3>
+								<p><span>Tickets</span> is the fast growing online flight booking service, available at one touch. For fast and safe bookings of your Flight tickets, experience our service and book on the GO!</p>
+							</div>
+							<img class="img-fluid" src="img/slide2.png" alt="...">
+					</div>
+					<div class="carousel-item">
+							<div class = "carousel-text">
+								<h3 class = "carousel-title">Find cheap flights from <span>1000s</span> of airlines and travel agents</h3>
+								<p>We are sure you will find cheap flights that you are looking for easily because we will search and compare the prices from over a very wide selection of the top travel websites and grab the best deals from over almost all airlines around the world.</p>
+							</div>
+							<img class="img-fluid" src="img/slide3.png" alt="...">
+					</div>
+				</div>
+				</div>
+		</section>
+		<section class = "tickets-container">
+        <div class="container">
+					<h2 class="title-wrapper">Why choose to make your flight reservation with <span>TICKETS</span> instead of other flight booking services?</h2>
+							<div class = "row">
+									<div class = "col-sm-12 col-lg-6 no-padding">
+											<div class = "tickets-1 tickets-1-1">
+													<h3><img src = "./img/search-icon.png" class = "tickets-icon" alt = "Easy" title = "Easy">Easy</h3>
+													<p>Our flight booking service is designed to find for you the best one way and round trip flight deals from your home airport. The flight search process is very fast and can be done within a few minutes. We will take care of giving you the cheapest flights.</p>
+											</div>
+									</div>
+									<div class = "col-sm-12 col-lg-6 no-padding">
+											<div class = "tickets-1 tickets-1-2">
+													<h3><img src = "./img/money-icon.png" class = "tickets-icon" alt = "Free" title = "Free">Free</h3>
+													<p>Our cheap flights deals service is FREE and it will stay Free for life, so there are No hidden fees or special members to book your next travel.</p>
+											</div>
+									</div>
+									<div class = "col-sm-12 col-lg-6 no-padding">
+											<div class = "tickets-1 tickets-1-3">
+													<h3><img src = "./img/time-icon.png" class = "tickets-icon" alt = "Fast" title = "Fast">Fast</h3>
+													<p>We designed our flights booking service to let you and your family book the cheapest flights in a very fast way, you will not find this navigation speed elsewhere.<p>
+											</div>
+									</div>
+									<div class = "col-sm-12 col-lg-6  no-padding">
+											<div class = "tickets-1 tickets-1-4">
+													<h3><img src = "./img/tickets-icon.png" class = "tickets-icon" alt = "Thousand of flight deals" title = "Thousand of flight deals">Thousand of flight deals</h3>
+													<p>We know that you are looking for the best flights deals and that's why we will help you by giving you thousands of cheapest flights. Here you would be able to find the best prices from the top travel websites.</p>
+											</div>
+									</div>
+							</div>
+				</div>
+		</section>
+    <div class="calendar">
+        <div class="container">
+					<div class="filters" style="">
+        <div class="row">
+					<div class = "mobile-v">
+						<a href = "#" class = "hamburger-link"><i class = "hamburger-icon"></i></a>
+						<a href = "#" class = "btn btn-default button-calendar"><i class = "calendar-icon"></i></a>
+					</div>
+					<div class = "mobile-container">
+						<a href = "#" class = "close-link"><i class = "icon-close"></i></a>
+						<div class="col-xs-12 col-sm-12 col-lg-3">
+								<div class = "desktop-v">
+			            	<a href="#" class="btn btn-default btn-price">By price</a>
+			            	<a href="#" class="btn btn-default btn-duration">By dyration</a>
+								</div>
+								<div class = "table-v">
+			            	<span class = "text-sort">Sort by</span>
+										<a href = "#" class = "button-sort"><img src = "img/coin-icon.png" alt = "" title = ""></a>
+										<a href = "#" class = "button-sort"><img src = "img/time-left-icon.png" alt = "" title = ""></a>
+								</div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-4">
+								<div class = "filter-stops">
+										<label>Stops:</label>
+										<div class="checkbox-filter">
+											<input id="non-stop-m" type="checkbox" name="stops" value="Non-stop" checked>
+											<label for="non-stop-m">Non-stop</label>
+											<input id="checkbox-1m" type="checkbox" name="stops" value="1" checked>
+											<label for="checkbox-1m">1</label>
+											<input id="checkbox-2m" type="checkbox" name="stops" value="2+" checked>
+											<label for="checkbox-2m">2+</label>
+										</div>
+								</div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-3">
+								<div class = "filter-duration">
+				            <label>Duration</label>
+				            <div id="dslider2"></div>
+										<div class = "dslider-time"><span>24 h 00 min</span></div>
+						</div>
+            </div>
+					</div>
+					<div class="col-xs-12 col-sm-2 col-lg-3">
+							<div class = "desktop-v">
+									<a href="#" class="btn btn-default btn-price">By price</a>
+									<a href="#" class="btn btn-default btn-duration">By dyration</a>
+							</div>
+							<div class = "table-v">
+									<span class = "text-sort">Sort by</span>
+									<a href = "#" class = "button-sort"><img src = "img/coin-icon.png" alt = "" title = ""></a>
+									<a href = "#" class = "button-sort"><img src = "img/time-left-icon.png" alt = "" title = ""></a>
+							</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-lg-4">
+							<div class = "filter-stops">
+									<label>Stops:</label>
+									<div class="checkbox-filter">
+										<input id="non-stop" type="checkbox" name="stops" value="Non-stop" checked>
+										<label for="non-stop">Non-stop</label>
+										<input id="checkbox-1" type="checkbox" name="stops" value="1" checked>
+										<label for="checkbox-1">1</label>
+										<input id="checkbox-2" type="checkbox" name="stops" value="2+" checked>
+										<label for="checkbox-2">2+</label>
+									</div>
+							</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-lg-3">
+							<div class = "filter-duration">
+									<label>Duration</label>
+									<div id="dslider"></div>
+									<div class = "dslider-time"><span>24 h 00 min</span></div>
+					</div>
+					</div>
+						<div class="col-xs-12 col-sm-2 col-lg-2">
+							<a href = "#" class = "btn btn-default button-calendar">Open calendar <i class = "calendar-icon"></i></a>
+            </div>
+						<div class = "col-xs-12 col-lg-12 col-sm-12">
+							<div class = "calendar-block">
+								<div class = "table-v button-calendar-tabs">
+										<a href = "#" class = "btn btn-default button-depart active">Depart</a>
+										<a href = "#" class = "btn btn-default button-return">Return</a>
+								</div>
+								<div id = "datepicker">
+									<div class = "depart-text">
+										Depart
+									</div>
+								</div>
+								<div id = "datepicker-2">
+									<div class = "depart-text">
+										Return
+									</div>
+								</div>
+							</div>
+						</div>
+
+        </div>
+        <br>
+        </div>
+        </div>
+    </div>
+		<div class = "tickets-block">
+				<div class = "container">
+						<div class = "inner-items">
+								<div class="sitem">
+									  <div class="col-xs-12 col-md-12 clearfix">
+									    	<div class="card card-default card-result">
+									      		<div class="card-body">
+									        			<div class="row">
+									          				<div class="col-md-9 price-info">
+									            					<div class="row">
+									              						<div class="col-md-12 price-info-position">
+									                 							<img title="LOT" alt="LOT" src="https://s1.apideeplink.com/images/airlines/LO.png">
+									              						</div>
+											              				<div class="col-md-12">
+															                	<div class="row line1">
+																	                	<div class="col-3 col-md-3 price-info-position">
+																	                      16:35 <div class="line2">Boryspil <br>Jan 15, 2019</div>
+																	                  </div>
+																	                  <div class="col-6 col-md-6 line1bg">
+																		                    <div class="line2">
+																		                     		<div class="stop-info">4 h 20 min</div>
+																														<div class = "start-circle">KBP</div>
+																														<div class = "end-circle">LGW</div>
+																		                    </div>
+																	                  </div>
+																	                  <div class="col-3 col-md-3 price-info-position">
+																		                    <div class = "float-right">
+																		                      	20:35 <div class="line2">Barcelona <br>Jan 15, 2019</div>
+																		                    </div>
+																	                  </div>
+															                	</div>
+											              				</div>
+									            					</div>
+									          				</div>
+													          <div class="col-md-3 price-button">
+																				<div class = "price-proposals">
+																            <div class="price">$ 196.24</div>
+																            <div class="proposals">15 Proposals</div>
+																				</div>
+														            <div class="button-wrapper">
+														              	<input class="btn-price" type="button" value="Details" data-toggle="modal" data-target="#details_modal">
+														            </div>
+													          </div>
+									        			</div>
+									      		</div>
+									    	</div>
+									  </div>
+										<br>
+									</div>
+									<div class="sitem">
+										  <div class="col-xs-12 col-md-12 clearfix">
+										    	<div class="card card-default card-result">
+										      		<div class="card-body">
+										        			<div class="row">
+										          				<div class="col-md-9 price-info">
+										            					<div class="row">
+										              						<div class="col-md-12 price-info-position">
+										                 							<img title="LOT" alt="LOT" src="https://s1.apideeplink.com/images/airlines/LO.png">
+																									<img title="" alt="" src="./img/swiss.png">
+										              						</div>
+												              				<div class="col-md-12">
+																                	<div class="row line1">
+																		                	<div class="col-3 col-md-3 price-info-position">
+																		                      16:35 <div class="line2">Boryspil <br>Jan 15, 2019</div>
+																		                  </div>
+																		                  <div class="col-6 col-md-6 line2bg">
+
+																			                    <div class="line2">
+																			                     		<div class="stop-info">4 h 20 min</div>
+																															<div class = "start-circle">KBP</div>
+																															<div class = "transit1-circle">ZRH
+																																<div class = "info-transit">
+																																		1 Stop: Zurich <br>(1 h 20 min)
+																																</div>
+																															</div>
+																															<div class = "end-circle">LGW</div>
+																			                    </div>
+																		                  </div>
+																		                  <div class="col-3 col-md-3 price-info-position">
+																			                    <div class = "float-right">
+																			                      	20:35 <div class="line2">Barcelona <br>Jan 15, 2019</div>
+																			                    </div>
+																		                  </div>
+																                	</div>
+												              				</div>
+										            					</div>
+										          				</div>
+														          <div class="col-md-3 price-button">
+																					<div class = "price-proposals">
+																	            <div class="price">$ 196.24</div>
+																	            <div class="proposals">15 Proposals</div>
+																					</div>
+															            <div class="button-wrapper">
+															              	<input class="btn-price" type="button" value="Details" data-toggle="modal" data-target="#details_modal">
+															            </div>
+														          </div>
+										        			</div>
+										      		</div>
+										    	</div>
+										  </div>
+										</div>
+										<br>
+										<div class="sitem">
+											  <div class="col-xs-12 col-md-12 clearfix">
+											    	<div class="card card-default card-result">
+											      		<div class="card-body">
+											        			<div class="row">
+											          				<div class="col-md-9 price-info">
+											            					<div class="row">
+											              						<div class="col-md-12 price-info-position">
+											                 							<img title="LOT" alt="LOT" src="https://s1.apideeplink.com/images/airlines/LO.png">
+																										<img title="" alt="" src="./img/swiss.png">
+																										<img title="" alt="" src="./img/FR.png">
+											              						</div>
+													              				<div class="col-md-12">
+																	                	<div class="row line1">
+																			                	<div class="col-3 col-md-3 price-info-position">
+																			                      16:35 <div class="line2">Boryspil <br>Jan 15, 2019</div>
+																			                  </div>
+																			                  <div class="col-6 col-md-6 line3bg">
+																				                    <div class="line2">
+																				                     		<div class="stop-info">4 h 20 min</div>
+																																<div class = "start-circle">KBP</div>
+																																<div class = "transit1-circle">ZRH
+																																	<div class = "info-transit">
+																																			Stop: <br>Zurich (1 h 20 min)
+																																	</div>
+																																</div>
+																																<div class = "transit2-circle">GVA
+																																	<div class = "info-transit">
+																																			Stop: <br>Geneva (3 h)
+																																	</div>
+																																</div>
+																																<div class = "end-circle">LGW</div>
+																				                    </div>
+																			                  </div>
+																			                  <div class="col-3 col-md-3 price-info-position">
+																				                    <div class = "float-right">
+																				                      	20:35 <div class="line2">Barcelona <br>Jan 15, 2019</div>
+																				                    </div>
+																			                  </div>
+																	                	</div>
+													              				</div>
+											            					</div>
+											          				</div>
+															          <div class="col-12 col-md-3 price-button">
+																						<div class = "price-proposals">
+																		            <div class="price">$ 196.24</div>
+																		            <div class="proposals">15 Proposals</div>
+																						</div>
+																            <div class="button-wrapper">
+																              	<input class="btn-price" type="button" value="Details" data-toggle="modal" data-target="#details_modal">
+																            </div>
+															          </div>
+											        			</div>
+											      		</div>
+											    	</div>
+											  </div>
+											</div>
+											<br>
+											<div class="sitem">
+												  <div class="col-xs-12 col-md-12 clearfix">
+												    	<div class="card card-default card-result">
+												      		<div class="card-body">
+												        			<div class="row">
+												          				<div class="col-md-9 price-info">
+												            					<div class="row">
+												              						<div class="col-md-12 price-info-position">
+												                 							<img title="LOT" alt="LOT" src="https://s1.apideeplink.com/images/airlines/LO.png">
+																											<img title="" alt="" src="./img/swiss.png">
+																											<img title="" alt="" src="./img/FR.png">
+												              						</div>
+														              				<div class="col-md-12">
+																		                	<div class="row line1">
+																				                	<div class="col-3 col-md-3 price-info-position">
+																				                      16:35 <div class="line2">Boryspil <br>Jan 15, 2019</div>
+																				                  </div>
+																				                  <div class="col-6 col-md-6 line3bg">
+																					                    <div class="line2">
+																					                     		<div class="stop-info">4 h 20 min</div>
+																																	<div class = "start-circle">KBP</div>
+																																	<div class = "transit1-circle">ZRH
+																																		<div class = "info-transit">
+																																				Stop: <br>Zurich (1 h 20 min)
+																																		</div>
+																																	</div>
+																																	<div class = "transit2-circle">GVA
+																																		<div class = "info-transit">
+																																				Stop: <br>Geneva (3 h)
+																																		</div>
+																																	</div>
+																																	<div class = "end-circle">LGW</div>
+																					                    </div>
+																				                  </div>
+																				                  <div class="col-3 col-md-3 price-info-position">
+																					                    <div class = "float-right">
+																					                      	20:35 <div class="line2">Barcelona <br>Jan 15, 2019</div>
+																					                    </div>
+																				                  </div>
+																		                	</div>
+														              				</div>
+												            					</div>
+																							<div class="row">
+												              						<div class="col-12 col-md-12 price-info-position">
+												                 							<img title="LOT" alt="LOT" src="https://s1.apideeplink.com/images/airlines/LO.png">
+																											<img title="" alt="" src="./img/swiss.png">
+																											<img title="" alt="" src="./img/FR.png">
+												              						</div>
+														              				<div class="col-md-12">
+																		                	<div class="row line1">
+																				                	<div class="col-3 col-md-3 price-info-position">
+																				                      16:35 <div class="line2">Boryspil <br>Jan 15, 2019</div>
+																				                  </div>
+																				                  <div class="col-6 col-md-6 line3bg">
+																					                    <div class="line2">
+																					                     		<div class="stop-info">4 h 20 min</div>
+																																	<div class = "start-circle">KBP</div>
+																																	<div class = "transit1-circle">ZRH
+																																		<div class = "info-transit">
+																																				Stop: <br>Zurich (1 h 20 min)
+																																		</div>
+																																	</div>
+																																	<div class = "transit2-circle">GVA
+																																		<div class = "info-transit">
+																																				Stop: <br>Geneva (3 h)
+																																		</div>
+																																	</div>
+																																	<div class = "end-circle">LGW</div>
+																					                    </div>
+																				                  </div>
+																				                  <div class="col-3 col-md-3 price-info-position">
+																					                    <div class = "float-right">
+																					                      	20:35 <div class="line2">Barcelona <br>Jan 15, 2019</div>
+																					                    </div>
+																				                  </div>
+																		                	</div>
+														              				</div>
+												            					</div>
+												          				</div>
+																          <div class="col-12 col-md-3 price-button">
+																							<div class = "price-proposals">
+																			            <div class="price">$ 196.24</div>
+																			            <div class="proposals">15 Proposals</div>
+																							</div>
+																	            <div class="button-wrapper">
+																	              	<input class="btn-price" type="button" value="Details" data-toggle="modal" data-target="#details_modal">
+																	            </div>
+																          </div>
+												        			</div>
+												      		</div>
+												    	</div>
+												  </div>
+												</div>
+							</div>
+				</div>
+			</div>
+    <!--<nav class="fmenu-box">
+        <div class="container">
+            <ul class="fmenu">
+                <li><a href="#">My account</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Information</a></li>
+                <li><a href="#">About us Partnership </a></li>
+                <li><a href="#">SupportVacancies</a></li>
+            </ul>
+        </div>
+    </nav>-->
+     <footer>
+        <div class="footer-contact __bg-option">
+            <div class="container">
+                <div class="row-flex __margin ">
+                    <div class="col-flex-md-3 col-flex-sm-6 col-flex-xs-12 __line-height font-inline">
+                        <div class="footer-icon">
+                            <img src="img/icon-tel.png" alt="">
+                        </div>
+                        <span class="footer-contact-info"> 38 044 502 74 38 <span>*Calls at the rate of your operator</span></span>
+                    </div>
+                    <div class="col-flex-md-3 col-flex-sm-6 col-flex-xs-12 __line-height font-inline">
+                       <div class="footer-icon">
+                            <img src="img/icon-chat.png" alt="">
+                        </div>
+                        <span class="footer-contact-info">Online chat<span>Online chat</span></span>
+                    </div>
+                    <div class="col-flex-md-3 col-flex-sm-6 col-flex-xs-12 __line-height font-inline">
+                        <div class="footer-icon">
+                            <img src="img/icon-skype.png" alt="">
+                        </div>
+                        <span class="footer-contact-info" > Call operator<span> Operator online</span></span>
+                    </div>
+                    <div class="col-flex-md-3 col-flex-sm-6 col-flex-xs-12 __line-height font-inline">
+                       <div class="footer-icon">
+                            <img src="img/icon-face.png" alt="">
+                        </div>
+                        <span class="footer-contact-info">Feedback<span>Your opinion is important to us</span></span>
+                    </div>
+                </div>
+                <div class="row-flex __margin-top __margin">
+                    <div class="col-flex-md-6 col-flex-sm-6 col-flex-xs-12 __line-height font-inline">
+                       <div class="footer-icon">
+                            <img src="img/icon-home.png" alt="">
+                        </div>
+                       <span class="footer-contact-info"> 79035, Ukraine, Lviv, Zelena st., 186</span>
+                    </div>
+                    <div class="col-flex-md-6 col-flex-sm-6 col-flex-xs-12 __line-height font-inline no-margin-bottom-xs">
+                        <div class="footer-icon">
+                            <img src="img/icon-email.png" alt="">
+                        </div>
+                        <span class="footer-contact-info">Email: info@tickets.ua</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="footer-box-flag">
+            <div class="container">
+                <h4 class="footer-box-flag-h">international site</h4>
+                <div class="font-inline">>
+                    <div class="box-flag-inner">
+                        <div class="box-flag-inner-singl font-inline">
+                            <a href="#">
+                                <div class="box-flag-inner-singl-img __bg-option" style="background-image: url(img/ukr.jpg)"></div>
+                                <span class="box-flag-inner-singl-name">Ukraina</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box-flag-inner">
+                        <div class="box-flag-inner-singl font-inline">
+                            <a href="#">
+                                <div class="box-flag-inner-singl-img __bg-option" style="background-image: url(img/ukr.jpg)"></div>
+                                <span class="box-flag-inner-singl-name">Ukraina</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box-flag-inner">
+                        <div class="box-flag-inner-singl font-inline">
+                            <a href="#">
+                                <div class="box-flag-inner-singl-img __bg-option" style="background-image: url(img/ukr.jpg)"></div>
+                                <span class="box-flag-inner-singl-name">Ukraina</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box-flag-inner">
+                        <div class="box-flag-inner-singl font-inline">
+                            <a href="#">
+                                <div class="box-flag-inner-singl-img __bg-option" style="background-image: url(img/ukr.jpg)"></div>
+                                <span class="box-flag-inner-singl-name">Ukraina</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box-flag-inner">
+                        <div class="box-flag-inner-singl font-inline">
+                            <a href="#">
+                                <div class="box-flag-inner-singl-img __bg-option" style="background-image: url(img/ukr.jpg)"></div>
+                                <span class="box-flag-inner-singl-name">Ukraina</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box-flag-inner">
+                        <div class="box-flag-inner-singl font-inline">
+                            <a href="#">
+                                <div class="box-flag-inner-singl-img __bg-option" style="background-image: url(img/ukr.jpg)"></div>
+                                <span class="box-flag-inner-singl-name">Ukraina</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box-flag-inner">
+                        <div class="box-flag-inner-singl font-inline">
+                            <a href="#">
+                                <div class="box-flag-inner-singl-img __bg-option" style="background-image: url(img/ukr.jpg)"></div>
+                                <span class="box-flag-inner-singl-name">Ukraina</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box-flag-inner">
+                        <div class="box-flag-inner-singl font-inline">
+                            <a href="#">
+                                <div class="box-flag-inner-singl-img __bg-option" style="background-image: url(img/ukr.jpg)"></div>
+                                <span class="box-flag-inner-singl-name">Ukraina</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="box-flag-inner">
+                        <div class="box-flag-inner-singl font-inline">
+                            <a href="#">
+                                <div class="box-flag-inner-singl-img __bg-option" style="background-image: url(img/ukr.jpg)"></div>
+                                <span class="box-flag-inner-singl-name">Ukraina</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box-flag-inner">
+                        <div class="box-flag-inner-singl font-inline">
+                            <a href="#">
+                                <div class="box-flag-inner-singl-img __bg-option" style="background-image: url(img/ukr.jpg)"></div>
+                                <span class="box-flag-inner-singl-name">Ukraina</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box-flag-inner">
+                        <div class="box-flag-inner-singl font-inline">
+                            <a href="#">
+                                <div class="box-flag-inner-singl-img __bg-option" style="background-image: url(img/ukr.jpg)"></div>
+                                <span class="box-flag-inner-singl-name">Ukraina</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copywriting text-center">
+                    <div>Tickets-Compare Cheap Fligts, Hotels & Car Hire</div>
+                    <div>© Tickets Ltd 2002-2016</div>
+                </div>
+            </div>
+        </section>
+<!--  end  NEW    По одному в колонку -->
+
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+<script src="./js/tickets.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="./js/main-2.js"></script>
+</div>
+<div class="modal fade" id="details_modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+            <h5 class="modal-title">15 Proposals</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class = "details-close"></i></span>
+            </button>
+          </div>
+      <div class="modal-body text-center">
+        <div class="row">
+            <div class="col-4 col-md-4"><div><img alt="Trip.ru" src="https://s1.apideeplink.com/images/websites/trru.png"></div></div>
+            <div class="col-4 col-md-4" style="text-align:center;"><span class="price">$&nbsp;200.34</span></div>
+            <div class="col-4 col-md-4"><a target="_blank" class="btn-price" href="http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=1toJUizVC7qDoGy1XPRIrYcp1HSniLybyNaykVNPCSLmRAeITFGEyah4sAZ2qXMN&amp;url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fRU%2fen-US%2fUSD%2ftrru%2f2%2f12911.9772.2019-01-17%2c9772.12911.2019-01-25%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32677%7c1753%7c12911%7c2019-01-17T14%3a45%7c10413%7c2019-01-17T17%3a10%7c205%7c-%7c-%7c-%3bflight%7c-32677%7c1548%7c10413%7c2019-01-18T15%3a20%7c9772%7c2019-01-18T17%3a00%7c100%7c-%7c-%7c-%2cflight%7c-32677%7c1449%7c9772%7c2019-01-25T06%3a25%7c10413%7c2019-01-25T08%3a25%7c120%7c-%7c-%7c-%3bflight%7c-32677%7c1752%7c10413%7c2019-01-25T09%3a45%7c12911%7c2019-01-25T13%3a55%7c190%7c-%7c-%7c-%26carriers%3d-32677%26operators%3d-32677%3b-31018%2c-31018%3b-32677%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d200.34%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dtrru.4110.9772.190117.190125.1..E%7c-8186281256641980669%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-01-10T01%3a31%3a00">Order</a></div>
+        </div>
+        <div class="row">
+            <div class="col-4 col-md-4"><div><img alt="AeroBilet" src="https://s1.apideeplink.com/images/websites/aebl.png"></div></div>
+            <div class="col-4 col-md-4" style="text-align:center;"><span class="price">$&nbsp;206.02</span></div>
+            <div class="col-4 col-md-4"><a target="_blank" class="btn-price" href="http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=1toJUizVC7qDoGy1XPRIrYcp1HSniLybyNaykVNPCSLmRAeITFGEyah4sAZ2qXMN&amp;url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fRU%2fen-US%2fUSD%2faebl%2f2%2f12911.9772.2019-01-17%2c9772.12911.2019-01-25%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32677%7c1753%7c12911%7c2019-01-17T14%3a45%7c10413%7c2019-01-17T17%3a10%7c205%7c-%7c-%7c-%3bflight%7c-32677%7c1548%7c10413%7c2019-01-18T15%3a20%7c9772%7c2019-01-18T17%3a00%7c100%7c-%7c-%7c-%2cflight%7c-32677%7c1449%7c9772%7c2019-01-25T06%3a25%7c10413%7c2019-01-25T08%3a25%7c120%7c-%7c-%7c-%3bflight%7c-32677%7c1752%7c10413%7c2019-01-25T09%3a45%7c12911%7c2019-01-25T13%3a55%7c190%7c-%7c-%7c-%26carriers%3d-32677%26operators%3d-32677%3b-31018%2c-31018%3b-32677%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d206.02%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3daebl.4110.9772.190117.190125.1..E%7c-8186281256641980669%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-01-10T01%3a31%3a00">Order</a></div>
+        </div>
+        <div class="row">
+            <div class="col-4 col-md-4"><div><img alt="City.Travel" src="https://s1.apideeplink.com/images/websites/citr.png"></div></div>
+            <div class="col-4 col-md-4" style="text-align:center;"><span class="price">$&nbsp;207.42</span></div>
+            <div class="col-4 col-md-4"><a target="_blank" class="btn-price" href="http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=1toJUizVC7qDoGy1XPRIrYcp1HSniLybyNaykVNPCSLmRAeITFGEyah4sAZ2qXMN&amp;url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fRU%2fen-US%2fUSD%2fcitr%2f2%2f12911.9772.2019-01-17%2c9772.12911.2019-01-25%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32677%7c1753%7c12911%7c2019-01-17T14%3a45%7c10413%7c2019-01-17T17%3a10%7c205%7c-%7c-%7c-%3bflight%7c-32677%7c1548%7c10413%7c2019-01-18T15%3a20%7c9772%7c2019-01-18T17%3a00%7c100%7c-%7c-%7c-%2cflight%7c-32677%7c1449%7c9772%7c2019-01-25T06%3a25%7c10413%7c2019-01-25T08%3a25%7c120%7c-%7c-%7c-%3bflight%7c-32677%7c1752%7c10413%7c2019-01-25T09%3a45%7c12911%7c2019-01-25T13%3a55%7c190%7c-%7c-%7c-%26carriers%3d-32677%26operators%3d-32677%3b-31018%2c-31018%3b-32677%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d207.42%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dcitr.4110.9772.190117.190125.1..E%7c-8186281256641980669%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-01-10T01%3a31%3a00">Order</a></div>
+        </div>
+        <div class="row">
+            <div class="col-4 col-md-4"><div><img alt="ozon.travel" src="https://s1.apideeplink.com/images/websites/ozon.png"></div></div>
+            <div class="col-4 col-md-4" style="text-align:center;"><span class="price">$&nbsp;219.40</span></div>
+            <div class="col-4 col-md-4"><a target="_blank" class="btn-price" href="http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=1toJUizVC7qDoGy1XPRIrYcp1HSniLybyNaykVNPCSLmRAeITFGEyah4sAZ2qXMN&amp;url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fRU%2fen-US%2fUSD%2fozon%2f2%2f12911.9772.2019-01-17%2c9772.12911.2019-01-25%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32677%7c1753%7c12911%7c2019-01-17T14%3a45%7c10413%7c2019-01-17T17%3a10%7c205%7c-%7c-%7c-%3bflight%7c-32677%7c1548%7c10413%7c2019-01-18T15%3a20%7c9772%7c2019-01-18T17%3a00%7c100%7c-%7c-%7c-%2cflight%7c-32677%7c1449%7c9772%7c2019-01-25T06%3a25%7c10413%7c2019-01-25T08%3a25%7c120%7c-%7c-%7c-%3bflight%7c-32677%7c1752%7c10413%7c2019-01-25T09%3a45%7c12911%7c2019-01-25T13%3a55%7c190%7c-%7c-%7c-%26carriers%3d-32677%26operators%3d-32677%3b-31018%2c-31018%3b-32677%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d219.40%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dozon.4110.9772.190117.190125.1..E%7c4967274038359037854%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-01-10T01%3a31%3a00">Order</a></div>
+        </div>
+        <div class="row">
+            <div class="col-4 col-md-4"><div><img alt="Go2See" src="https://s1.apideeplink.com/images/websites/go2c.png"></div></div>
+            <div class="col-4 col-md-4" style="text-align:center;"><span class="price">$&nbsp;219.40</span></div>
+            <div class="col-4 col-md-4"><a target="_blank" class="btn-price" href="http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=1toJUizVC7qDoGy1XPRIrYcp1HSniLybyNaykVNPCSLmRAeITFGEyah4sAZ2qXMN&amp;url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fRU%2fen-US%2fUSD%2fgo2c%2f2%2f12911.9772.2019-01-17%2c9772.12911.2019-01-25%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32677%7c1753%7c12911%7c2019-01-17T14%3a45%7c10413%7c2019-01-17T17%3a10%7c205%7c-%7c-%7c-%3bflight%7c-32677%7c1548%7c10413%7c2019-01-18T15%3a20%7c9772%7c2019-01-18T17%3a00%7c100%7c-%7c-%7c-%2cflight%7c-32677%7c1449%7c9772%7c2019-01-25T06%3a25%7c10413%7c2019-01-25T08%3a25%7c120%7c-%7c-%7c-%3bflight%7c-32677%7c1752%7c10413%7c2019-01-25T09%3a45%7c12911%7c2019-01-25T13%3a55%7c190%7c-%7c-%7c-%26carriers%3d-32677%26operators%3d-32677%3b-31018%2c-31018%3b-32677%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d219.40%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dgo2c.4110.9772.190117.190125.1..E%7c-8186281256641980669%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-01-10T01%3a31%3a00">Order</a></div>
+        </div>
+        <div class="row">
+            <div class="col-4 col-md-4"><div><img alt="Supersaver.ru" src="https://s1.apideeplink.com/images/websites/suru.png"></div></div>
+            <div class="col-4 col-md-4" style="text-align:center;"><span class="price">$&nbsp;219.40</span></div>
+            <div class="col-4 col-md-4"><a target="_blank" class="btn-price" href="http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=1toJUizVC7qDoGy1XPRIrYcp1HSniLybyNaykVNPCSLmRAeITFGEyah4sAZ2qXMN&amp;url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fRU%2fen-US%2fUSD%2fsuru%2f2%2f12911.9772.2019-01-17%2c9772.12911.2019-01-25%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32677%7c1753%7c12911%7c2019-01-17T14%3a45%7c10413%7c2019-01-17T17%3a10%7c205%7c-%7c-%7c-%3bflight%7c-32677%7c1548%7c10413%7c2019-01-18T15%3a20%7c9772%7c2019-01-18T17%3a00%7c100%7c-%7c-%7c-%2cflight%7c-32677%7c1449%7c9772%7c2019-01-25T06%3a25%7c10413%7c2019-01-25T08%3a25%7c120%7c-%7c-%7c-%3bflight%7c-32677%7c1752%7c10413%7c2019-01-25T09%3a45%7c12911%7c2019-01-25T13%3a55%7c190%7c-%7c-%7c-%26carriers%3d-32677%26operators%3d-32677%3b-31018%2c-31018%3b-32677%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d219.40%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dsuru.4110.9772.190117.190125.1..E%7c-8186281256641980669%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-01-10T01%3a31%3a00">Order</a></div>
+        </div>
+				<div class="row">
+            <div class="col-4 col-md-4"><div><img alt="Supersaver.ru" src="https://s1.apideeplink.com/images/websites/suru.png"></div></div>
+            <div class="col-4 col-md-4" style="text-align:center;"><span class="price">$&nbsp;219.40</span></div>
+            <div class="col-4 col-md-4"><a target="_blank" class="btn-price" href="http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=1toJUizVC7qDoGy1XPRIrYcp1HSniLybyNaykVNPCSLmRAeITFGEyah4sAZ2qXMN&amp;url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fRU%2fen-US%2fUSD%2fsuru%2f2%2f12911.9772.2019-01-17%2c9772.12911.2019-01-25%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32677%7c1753%7c12911%7c2019-01-17T14%3a45%7c10413%7c2019-01-17T17%3a10%7c205%7c-%7c-%7c-%3bflight%7c-32677%7c1548%7c10413%7c2019-01-18T15%3a20%7c9772%7c2019-01-18T17%3a00%7c100%7c-%7c-%7c-%2cflight%7c-32677%7c1449%7c9772%7c2019-01-25T06%3a25%7c10413%7c2019-01-25T08%3a25%7c120%7c-%7c-%7c-%3bflight%7c-32677%7c1752%7c10413%7c2019-01-25T09%3a45%7c12911%7c2019-01-25T13%3a55%7c190%7c-%7c-%7c-%26carriers%3d-32677%26operators%3d-32677%3b-31018%2c-31018%3b-32677%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d219.40%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dsuru.4110.9772.190117.190125.1..E%7c-8186281256641980669%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-01-10T01%3a31%3a00">Order</a></div>
+        </div>
+				<div class="row">
+            <div class="col-4 col-md-4"><div><img alt="Supersaver.ru" src="https://s1.apideeplink.com/images/websites/suru.png"></div></div>
+            <div class="col-4 col-md-4" style="text-align:center;"><span class="price">$&nbsp;219.40</span></div>
+            <div class="col-4 col-md-4"><a target="_blank" class="btn-price" href="http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=1toJUizVC7qDoGy1XPRIrYcp1HSniLybyNaykVNPCSLmRAeITFGEyah4sAZ2qXMN&amp;url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fRU%2fen-US%2fUSD%2fsuru%2f2%2f12911.9772.2019-01-17%2c9772.12911.2019-01-25%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32677%7c1753%7c12911%7c2019-01-17T14%3a45%7c10413%7c2019-01-17T17%3a10%7c205%7c-%7c-%7c-%3bflight%7c-32677%7c1548%7c10413%7c2019-01-18T15%3a20%7c9772%7c2019-01-18T17%3a00%7c100%7c-%7c-%7c-%2cflight%7c-32677%7c1449%7c9772%7c2019-01-25T06%3a25%7c10413%7c2019-01-25T08%3a25%7c120%7c-%7c-%7c-%3bflight%7c-32677%7c1752%7c10413%7c2019-01-25T09%3a45%7c12911%7c2019-01-25T13%3a55%7c190%7c-%7c-%7c-%26carriers%3d-32677%26operators%3d-32677%3b-31018%2c-31018%3b-32677%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d219.40%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dsuru.4110.9772.190117.190125.1..E%7c-8186281256641980669%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-01-10T01%3a31%3a00">Order</a></div>
+        </div>
+				<div class="row">
+            <div class="col-4 col-md-4"><div><img alt="Supersaver.ru" src="https://s1.apideeplink.com/images/websites/suru.png"></div></div>
+            <div class="col-4 col-md-4" style="text-align:center;"><span class="price">$&nbsp;219.40</span></div>
+            <div class="col-4 col-md-4"><a target="_blank" class="btn-price" href="http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=1toJUizVC7qDoGy1XPRIrYcp1HSniLybyNaykVNPCSLmRAeITFGEyah4sAZ2qXMN&amp;url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fRU%2fen-US%2fUSD%2fsuru%2f2%2f12911.9772.2019-01-17%2c9772.12911.2019-01-25%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32677%7c1753%7c12911%7c2019-01-17T14%3a45%7c10413%7c2019-01-17T17%3a10%7c205%7c-%7c-%7c-%3bflight%7c-32677%7c1548%7c10413%7c2019-01-18T15%3a20%7c9772%7c2019-01-18T17%3a00%7c100%7c-%7c-%7c-%2cflight%7c-32677%7c1449%7c9772%7c2019-01-25T06%3a25%7c10413%7c2019-01-25T08%3a25%7c120%7c-%7c-%7c-%3bflight%7c-32677%7c1752%7c10413%7c2019-01-25T09%3a45%7c12911%7c2019-01-25T13%3a55%7c190%7c-%7c-%7c-%26carriers%3d-32677%26operators%3d-32677%3b-31018%2c-31018%3b-32677%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d219.40%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dsuru.4110.9772.190117.190125.1..E%7c-8186281256641980669%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-01-10T01%3a31%3a00">Order</a></div>
+        </div>
+				<div class="row">
+            <div class="col-4 col-md-4"><div><img alt="Supersaver.ru" src="https://s1.apideeplink.com/images/websites/suru.png"></div></div>
+            <div class="col-4 col-md-4" style="text-align:center;"><span class="price">$&nbsp;219.40</span></div>
+            <div class="col-4 col-md-4"><a target="_blank" class="btn-price" href="http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=1toJUizVC7qDoGy1XPRIrYcp1HSniLybyNaykVNPCSLmRAeITFGEyah4sAZ2qXMN&amp;url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fRU%2fen-US%2fUSD%2fsuru%2f2%2f12911.9772.2019-01-17%2c9772.12911.2019-01-25%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32677%7c1753%7c12911%7c2019-01-17T14%3a45%7c10413%7c2019-01-17T17%3a10%7c205%7c-%7c-%7c-%3bflight%7c-32677%7c1548%7c10413%7c2019-01-18T15%3a20%7c9772%7c2019-01-18T17%3a00%7c100%7c-%7c-%7c-%2cflight%7c-32677%7c1449%7c9772%7c2019-01-25T06%3a25%7c10413%7c2019-01-25T08%3a25%7c120%7c-%7c-%7c-%3bflight%7c-32677%7c1752%7c10413%7c2019-01-25T09%3a45%7c12911%7c2019-01-25T13%3a55%7c190%7c-%7c-%7c-%26carriers%3d-32677%26operators%3d-32677%3b-31018%2c-31018%3b-32677%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d219.40%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dsuru.4110.9772.190117.190125.1..E%7c-8186281256641980669%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-01-10T01%3a31%3a00">Order</a></div>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="refresh_modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+						<div class = "refresh-block">
+        		<img src = "img/refresh-icon.png" alt = "" title = "">
+								<p><strong>Refresh your results</strong><p>
+								<p>For the latest prices and availability, we<br> need to refresh your results.</p>
+						</div>
+        </div>
+				<div class="modal-footer">
+        		<button type="button" class="btn btn-default btn-refresh" data-dismiss="modal">Refresh</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

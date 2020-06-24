@@ -1,0 +1,1505 @@
+.btn:focus, .btn.focus {
+    box-shadow: none;
+}
+:focus{
+  outline: -webkit-focus-ring-color auto 0px;
+}
+a:hover {
+    color: #222;
+}
+.popular-tab {
+    background: #eeeeee;
+    margin: 0px;
+}
+.popular-tab li {
+    border: 0px solid #f3f3f3;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 23px 2px 20px 35px;
+    margin-right: 0px;
+    text-align: left;
+    font-size: 20px;
+    padding: 23px 2px 17px 35px;
+    color: #c9000a;
+}
+.popular-tab li:hover, .popular-tab li.active {
+    color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #c9000a;
+    position: relative;
+}
+.popular-tab-content-box {
+    background: #fdfdfd;
+    box-shadow: inset 0px 0px 20px 0px rgba(221, 221, 221, 0.5);
+    margin: 0px 0px 0px;
+}
+ul.popular-tab-content {
+    padding: 7px 0px;
+    margin-bottom: 0px;
+}
+.popular-tab-content > li {
+    margin-right: 0px;
+    padding: 18px 40px;
+}
+.popular-tab-content a {
+    color: #414141;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.black-plane {
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    margin: 0px 10px;
+    margin-top: -3px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../img/black-plane.png);
+    background-position: 0 0;
+}
+.popular-tab-content a:hover .black-plane{
+    background-image: url(../img/black-plane-red.png);
+}
+.popular-tab li::after{
+    content: "";
+    background: transparent;
+    -webkit-transition: 0.9s;
+    transition: 0.9s;
+    transform: rotate(45deg);
+}
+.popular-tab li.active::after, .popular-tab li:hover::after{
+    content: "";
+    width: 20px;
+    position: absolute;
+    height: 20px;
+    right: -10px;
+    top: 25px;
+    transform: rotate(45deg);
+    background: #c9010b;
+}
+.block-country{
+    width: calc(51% - 30px);
+    margin-left: 30px;
+}
+.first-block, .second-block, .third-block{
+    height: 263px;
+    float: left;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 20px 5px rgba(221, 221, 221, 0.6);
+
+}
+.first-block{
+    background: url(../img/dubai.png);
+    margin-bottom: 30px;
+}
+
+.second-block{
+    background: url(../img/card.png);
+    margin-right: 15px;
+    width: calc(100% - 15px);
+}
+.third-block{
+    background: url(../img/london.png);
+    margin-left: 15px;
+    width: calc(100% - 15px);
+}
+.heading-country{
+  font-family: 'MyriadPro';
+  font-size: 25px;
+  font-weight: 600;
+  color: #c9010b;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 70px;
+}
+.block-country .col-sm-12, .block-country .col-sm-6{
+  padding: 0px;
+}
+.button-search{position: absolute;top: 0;right: 0;left: 0;bottom: 0;width: 190px;height: 50px;margin: auto;text-align: center;line-height: 50px;color: #fff;border: 2px solid #fff;font-size: 22px;font-weight: 500;text-transform: uppercase;}
+a.button-search:hover{
+  color: #414141;
+  border: 2px solid #414141;
+  cursor: pointer !important;
+}
+.img-fluid {
+    width: 100%;
+}
+.carousel-text{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  margin: 0px auto;
+  width: 500px;
+  z-index: 10;
+}
+h3.carousel-title{
+  font-family: 'MyriadPro';
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 35px;
+}
+h3.carousel-title span{
+  color: #242424;
+}
+.carousel-text p{
+  font-family: 'MyriadPro';
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+.carousel-text p span{
+  color: #242424;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+h2.title-wrapper span{
+  color: #c80718;
+}
+.tickets-container, .tickets-block{
+  background: #eeeeee;
+  padding: 0px 0px 50px 0px;
+
+}
+
+.tickets-container h2.popular-title{
+  margin-top: 0px;
+  padding: 0px 170px;
+}
+.tickets-1{
+  background: #fff;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  margin: 2px;
+  padding: 40px 50px 35px 50px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 8px 0px #ddd;
+}
+
+
+.no-padding{
+  padding: 0px;
+}
+.tickets-container .row{
+  padding: 0px 50px;
+}
+.tickets-1 h3, .tickets-1 p{
+  font-family: 'MyriadPro';
+  font-size: 20px;
+  font-weight: 600;
+  color: #222222;
+}
+.tickets-1 h3{
+  margin-bottom: 25px;
+}
+.tickets-1 p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.tickets-icon{
+  margin-right: 20px;
+  margin-top: -4px;
+}
+.carousel-item{
+  background: url(../img/black-plane-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  height: 390px;
+}
+.img-fluid {
+  max-width: 100%;
+  width: auto;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  position: absolute;
+}
+.tickets-1-1::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    bottom: -25px;
+    background: #eee;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    border-radius: 100px;
+}
+.tickets-1-2::after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    bottom: -25px;
+    background: #eee;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    border-radius: 100px;
+}
+#dslider, #dslider2{
+  position: relative;
+  height: 5px;
+}
+.ui-widget-header {
+    border: 2px solid #c80718 !important;
+    background: #c80718 !important;
+}
+.filter-duration .ui-state-default, .filter-duration .ui-widget-content .ui-state-default {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: -9px !important;
+    background: #fff !important;
+    border-radius: 100px;
+    box-shadow: 0px 0px 5px 1px #f1efef;
+}
+.filter-duration .ui-widget-content .ui-state-active, .filter-duration .ui-widget-content .ui-state-focus.ui-state-hover.ui-state-active{
+    background: #fff !important;
+    box-shadow: 0px 0px 5px 1px #f1efef !important;
+    border-radius: 100px !important;
+    height: 20px;
+    width: 20px;
+}
+.calendar{
+    background: #eeeeee;
+}
+.filters .btn-price, .btn-duration{
+    width: 120px;
+    height: 40px;
+    float: left;
+    margin: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    line-height: 40px;
+    text-transform: none;
+    box-shadow: 0px 0px 8px 0px #ddd;
+}
+.btn-duration{
+    background: #fff;
+    color: #c80718;
+}
+.btn-price:hover, .btn-duration:hover{
+    color: #222;
+}
+.filters input[type="checkbox"]{
+    margin-left: 25px;
+    margin-right: 8px;
+}
+.filter-stops, .filter-duration {
+    height: 40px;
+    line-height: 40px;
+}
+.filter-duration label,  .filter-stops label{
+    float: left;
+    margin-bottom: 0px;
+    color: #ae0514;
+}
+.filter-duration #dslider, .filter-duration #dslider2 {
+    width: 51%;
+    float: left;
+    margin: 16px 0px 0px 30px;
+}
+.dslider-time{
+    display: block;
+    width: 77%;
+    text-align: center;
+    float: right;
+    font-size: 12px;
+    color: #787878;
+}
+.calendar-icon{
+    width: 20px;
+    height: 23px;
+    background-repeat: no-repeat;
+    margin: 0px 10px;
+    margin-top: -3px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../img/calendar-icon.png);
+    background-position: 0 0;
+}
+.button-calendar, .button-calendar-2 {
+    padding-left: 20px;
+    width: 100%;
+    height: 40px;
+    padding-top: 11px;
+    border-radius: 0px;
+    background: #fff;
+    font-size: 14px;
+    box-shadow: 0px 0px 8px 0px #ddd;
+    color: #c80718;
+    position: relative;
+    z-index: 1;
+}
+.button-calendar::after{
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+    border-top: 10px solid #fff;
+    bottom: -21px;
+    right: 22px;
+    z-index: -1;
+}
+.button-calendar.active, .button-depart.active, .button-return.active{
+  background: #c80718;
+  color: #fff;
+}
+.button-calendar.active i.calendar-icon{
+  background-image: url(../img/calendar-icon-white.png);
+}
+.button-calendar.active::after{
+  border-top: 10px solid #c80718;
+}
+.calendar-block{
+  display: none;
+  background: #f7f7f7;
+  float: left;
+  width: 100%;
+}
+#datepicker, #datepicker-2{
+  width: 50%;
+  background: #f7f7f7;
+  padding: 15px 110px;
+  float: left;
+  position: relative;
+}
+#datepicker .ui-datepicker, #datepicker-2 .ui-datepicker{
+  width: 100%;
+  position: relative;
+}
+#datepicker .ui-widget-header, #datepicker-2 .ui-widget-header {
+    border: 0px solid #c80718 !important;
+    background: transparent !important;
+}
+#datepicker .ui-datepicker .ui-datepicker-title, #datepicker-2 .ui-datepicker .ui-datepicker-title {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#datepicker .ui-widget.ui-widget-content, #datepicker-2 .ui-widget.ui-widget-content {
+    border: 0px solid #d8dcdf;
+    background: transparent;
+}
+.ui-widget-header .ui-icon {
+    background-image: url(../img/left-arrow.png) !important;
+    background-position: center;
+    width: 28px;
+    height: 28px;
+}
+.ui-icon.ui-icon-circle-triangle-w{
+  transform: rotate(180deg);
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover{
+  border: 0px !important;
+  background: transparent !important;
+  top: 45% !important;
+}
+.ui-datapicker-next-hover{
+  right: -40px !important;
+}
+.ui-datapicker-prev-hover{
+  left: -50px !important;
+}
+.ui-datepicker .ui-datepicker-header {
+    position: unset !important;
+}
+#datepicker .ui-datepicker .ui-datepicker-next, #datepicker-2 .ui-datepicker .ui-datepicker-next{
+    right: -40px;
+    top: 45%;
+}
+#datepicker .ui-datepicker .ui-datepicker-prev, #datepicker-2 .ui-datepicker .ui-datepicker-prev{
+    left: -50px;
+    top: 45%;
+}
+.calendar-block .ui-datepicker td {
+    height: 40px;
+    width: 14.3%;
+}
+.calendar-block .ui-state-default, .calendar-block .ui-widget-content .ui-state-default {
+    text-align: center;
+    border: 0px solid #d8dcdf;
+    background: transparent;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    line-height: 2;
+    height: 40px;
+    /* width: 30px; */
+    padding: 0px;
+}
+.calendar-block .ui-widget-content .ui-state-active {
+    padding-left: 0px !important;
+    background: #c80718 !important;
+    width: 35px;
+    border-radius: 2px;
+    margin: 0px auto !important;
+}
+.calendar-block .ui-datepicker-current-day{
+  /*background: #c80718;*/
+  height: 40px;
+  width: 40px;
+}
+.calendar-block .ui-datepicker-current-day a{
+  color: #fff !important;
+}
+.calendar-block .ui-datepicker th {
+    color: #919191;
+    border-bottom: 1px solid #dadada;
+}
+.card-body .row{
+  margin: 0px;
+}
+.price-info {
+    padding: 0px 20px 0px 20px;
+}
+.price-info > .row {
+    padding: 22px 0px;
+    position: relative;
+}
+.price-info > .row::after {
+    content: "";
+    border-bottom: 1px solid #ddd;
+    width: calc(100% + 40px);
+    bottom: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    position: absolute;
+}
+
+.price-info-position img{
+  max-width: 80px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.line1 .price-info-position{
+  font-family: 'MyriadPro';
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.3;
+}
+.line2{
+  color: #888788;
+  font-size: 19px;
+  font-weight: 400;
+}
+.button-wrapper {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.button-wrapper .btn-price {
+    height: 55px;
+    font-size: 24px;
+    padding-top: 11px;
+    margin-top: 0px;
+}
+.price {
+    font-size: 38px;
+    font-family: 'MyriadPro';
+    font-weight: 700;
+    line-height: 1;
+}
+.proposals {
+    color: #878787;
+    text-transform: none;
+    font-size: 19px;
+    font-weight: 400;
+}
+.price-proposals {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 105px;
+    width: 100%;
+    margin: auto;
+}
+.line1bg, .line2bg, .line3bg{
+    background-position: center 45px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.line1bg{
+    background-image: url(../img/line1bg.png);
+}
+.line2bg {
+    background-image: url(../img/line2bg.png);
+}
+.line3bg {
+    background-image: url(../img/line3bg.png);
+}
+.line2 .stop-info {
+    font-size: 16px;
+    text-transform: none;
+    color: #424141;
+    text-align: center;
+    margin-top: 25px;
+}
+.start-circle, .end-circle, .transit1-circle, .transit2-circle{
+    display: inline-block;
+    position: absolute;
+
+}
+.start-circle{
+    left: -10px;
+}
+.end-circle{
+    right: -10px;
+}
+.transit1-circle{
+    left: 42%;
+}
+.line3bg .transit1-circle{
+    left: 32%;
+}
+.line3bg .transit2-circle{
+    left: 66%;
+}
+.tickets-block > .container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.info-transit {
+    text-align: center;
+    font-family: 'MyriadPro';
+    font-size: 10px;
+    border-radius: 3px;
+    background: #bc0008;
+    padding: 10px 15px;
+    width: 125px;
+    color: #fff;
+    text-transform: none;
+    left: -45px;
+    margin: auto;
+    right: 0;
+    bottom: 75px;
+    position: absolute;
+    line-height: 1.2;
+    display: none;
+}
+.info-transit::after {
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+    border-top: 10px solid #c9010b;
+    bottom: -20px;
+    right: 0;
+    margin: auto 52px;
+    z-index: 1;
+}
+.line2bg .info-transit {
+    margin: 0;
+}
+.line2bg .info-transit::after {
+    margin: auto 52px;
+}
+.start-circle, .end-circle, .transit1-circle, .transit2-circle {
+    display: inline-block;
+    padding-top: 30px;
+    cursor: pointer;
+    position: absolute;
+}
+/*.transit1-circle:hover .stop-info, .transit2-circle:hover .stop-info{
+  color: #fff;
+}*/
+.transit1-circle:hover > .info-transit, .transit2-circle:hover > .info-transit, .transit1-circle:focus > .info-transit, .transit2-circle:focus > .info-transit{
+  display: block;
+}
+.modal-header {
+    justify-content: center;
+    padding: 10px 20px;
+}
+button.close {
+    position: absolute;
+    right: 17px;
+    top: 5px;
+    font-size: 36px;
+}
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: 'MyriadPro';
+    color: #878787;
+}
+.modal-body .row {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+.modal-body {
+    padding: 0px 15px;
+}
+.modal-body .price {
+    font-size: 14px;
+    color: #c80718;
+}
+#details_modal .modal-body .row .col-md-4{
+    padding: 0px 20px;
+}
+.modal-body .btn-price {
+    margin-top: 0px;
+    text-transform: none;
+    font-size: 14px;
+    padding: 5px;
+    width: 115px;
+    float: right;
+    border-radius: 0px;
+}
+.modal-body img{
+  height: 40px;
+  float: left;
+}
+.modal-body .refresh-block img {
+    float: none;
+    margin: 35px auto;
+}
+.refresh-block p{
+  font-size: 18px;
+}
+.btn-refresh{
+  color: #fff;
+  font-size: 18px;
+  background: #c80718;
+  margin: 35px auto;
+  margin-top: 15px;
+  line-height: 1;
+  /* padding-top: 10px; */
+  height: 45px;
+  width: 190px;
+  border-radius: 0px;
+  box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.1);
+}
+#refresh_modal .modal-dialog{
+  margin: 150px auto;
+}
+#refresh_modal .modal-dialog, .modal.show .modal-dialog{
+  box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.1);
+}
+.modal-open > .wrapper{
+  -webkit-filter: url("#blur");
+    filter: url("#blur");
+  /* SVG filters for browser support. */
+  -webkit-filter: blur(3px);
+    filter: blur(3px);
+  /* works in chrome */
+  -webkit-transition: -webkit-filter 500ms linear;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+    user-select: none;
+}
+.modal-footer {
+    padding: 0px;
+    border-top: 0px solid #e9ecef;
+}
+.modal-backdrop {
+    background-color: transparent;
+}
+.tickets-block {
+    padding: 10px 0px;
+    padding-bottom: 25px;
+}
+.depart-text, .return-text{
+    position: absolute;
+    top: 23px;
+    left: 130px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #c80718;
+}
+.table-v{
+  display: none;
+}
+.mobile-container, .mobile-v{
+  display: none;
+}
+.items-stops{
+  float: left;
+}
+.ui-datepicker td[title]::after, .ui-datepicker td.ui-datepicker-unselectable[title]::after{
+  content: attr(title);
+  display: block;
+  position: relative;
+  font-size: .8em;
+  height: 1.25em;
+  margin-top: -1.7em;
+  text-align: right;
+  text-align: center !important;
+  color: #3b99fc;
+}
+
+.ui-datepicker td[title].low-price::after{
+  color: #c80718;
+}
+.ui-datepicker td[title].price-date.ui-datepicker-current-day::after, .ui-datepicker td[title].low-price.ui-datepicker-current-day::after{
+  color: #fff;
+}
+.ui-datepicker td.ui-datepicker-unselectable[title]::after{
+  content: "";
+}
+.ui-datepicker td {
+    padding: 5px 0px !important;
+}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+    cursor: pointer;
+}
+.details-close{
+  background-image: url(../img/cross-out-icon.png);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+
+}
+input[type=checkbox] {
+	display: none;
+}
+.checkbox-filter{
+  float: left;
+  margin-top: 12px;
+}
+.checkbox-filter label{
+  position: relative;
+  padding-left: 50px;
+  line-height: 1;
+}
+.checkbox-filter label:before {
+    content: " ";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 0px;
+    margin-left: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+input[type=checkbox]:checked + label:before {
+  content: "\2713";
+  background: #c80718;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  line-height: 18px;
+}
+.box-wrapper {
+    padding-top: 0px;
+}
+.title-wrapper {
+    margin: 0px;
+    padding: 40px 0px;
+}
+@media (max-width: 1024px){
+  .filters .btn-price, .btn-duration {
+    width: 50%;
+}
+
+.button-calendar, .button-calendar-2 {
+    padding-left: 10px;
+}
+.dslider-time {
+    display: block;
+    width: 65%;
+}
+.info-transit {
+  left: -48px;
+}
+}
+@media (max-width: 996px){
+  .start-circle, .end-circle, .transit1-circle, .transit2-circle {
+      padding-top: 20px;
+  }
+.info-transit {
+    bottom: 55px;
+    left: -51px;
+}
+  ul.popular-tab-content {
+    padding: 5px 0px;
+}
+.checkbox-filter label {
+    padding-left: 30px;
+}
+.checkbox-filter label:before {
+    width: 12px;
+    height: 12px;
+    top: -1px;
+    margin-left: 10px;
+}
+.checkbox-filter {
+    float: left;
+    margin-top: 13px;
+}
+  .button-calendar, .button-calendar-2 {
+      box-shadow: none;
+      background: transparent;
+  }
+  .popular-tab {
+      width: 26%;
+  }
+  .popular-tab-content-box {
+      width: 35%;
+  }
+  .block-country {
+      width: calc(39% - 20px);
+      margin-left: 20px;
+  }
+  .popular-tab li:nth-child(n+7), .popular-tab-content li:nth-child(n+7) {
+      display: block !important;
+  }
+  .second-block{
+    margin-bottom: 30px;
+  }
+  .second-block, .third-block{
+      margin-right: 0px;
+      margin-left: 0px;
+      width: 100%;
+  }
+  .popular-tab {
+      display: flex;
+  }
+  .popular-tab li {
+    margin: 0px;
+    padding: 40px 0px 34px 30px;
+  }
+  .popular-tab li.active::after, .popular-tab li:hover::after {
+      top: calc(50% - 10px);
+  }
+  .popular-tab-content > li {
+      padding: 35px 0px 35px 40px;
+  }
+  .title-wrapper {
+      margin-bottom: 0px;
+  }
+  .tickets-container .title-wrapper{
+    margin-bottom: 45px;
+  }
+  .tickets-1 {
+      height: calc(100% - 25px);
+      width: 100%;
+      margin-bottom: 25px;
+      text-align: center;
+      position: relative;
+  }
+  .tickets-1-1, .tickets-1-2, .tickets-1-3, .tickets-1-4 {
+    background: #fff;
+  }
+  .tickets-container {
+      padding: 50px 75px;
+  }
+  .tickets-container h2.popular-title {
+      padding: 0px;
+  }
+  .tickets-1{
+      height: 216px;
+      max-height: 216px;
+  }
+  .tickets-1::before, .tickets-1-1::before{
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: -15px;
+      bottom: 0px;
+      background: #eee;
+      width: 30px;
+      margin: auto;
+      height: 30px;
+      border-radius: 100px;
+  }
+  .tickets-1::after, .tickets-1-2::after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: -15px;
+      bottom: 0px;
+      background: #eee;
+      width: 30px;
+      margin: auto;
+      height: 30px;
+      border-radius: 100px;
+  }
+  .desktop-v, .depart-text, .return-text{
+      display: none;
+  }
+  .table-v{
+      display: block;
+      height: 37px;
+      line-height: 39px;
+  }
+  .button-sort {
+    margin-left: 8px;
+    float: left;
+  }
+  .text-sort{
+    font-size: 14px;
+    color: #ae0514;
+    font-weight: 600;
+    float: left;
+  }
+  .filter-duration label, .filter-stops label {
+    font-weight: 600;
+    font-size: 14px;
+    float: left;
+}
+.filters input[type="checkbox"] {
+    margin-left: 13px;
+    margin-right: 5px;
+}
+.filter-stops, .filter-duration {
+    font-size: 14px;
+}
+.filter-duration #dslider, .filter-duration #dslider2 {
+    width: 65%;
+    float: left;
+    margin: 16px 0px 0px 0px;
+}
+.filter-duration label{
+  width: 35%;
+}
+.button-calendar {
+    padding-left: 15px;
+}
+.button-calendar::after {
+    border: 12px solid transparent;
+    border-top: 12px solid transparent;
+    right: 7px;
+}
+.dslider-time {
+    margin-top: -3px;
+}
+#datepicker, #datepicker-2 {
+    width: 50%;
+    background: transparent;
+    padding: 15px 0px;
+    float: left;
+    left: 0;
+    top: 35px;
+    right: 0;
+    margin: 0px auto;
+    position: absolute;
+    z-index: 1;
+    transition: 1s;
+}
+.calendar-block {
+    position: relative;
+    height: 400px;
+}
+#datepicker .ui-datepicker .ui-datepicker-prev, #datepicker-2 .ui-datepicker .ui-datepicker-prev {
+    left: -90px;
+}
+#datepicker .ui-datepicker .ui-datepicker-next, #datepicker-2 .ui-datepicker .ui-datepicker-next {
+    right: -85px;
+}
+.button-calendar-tabs {
+    width: 200px;
+    margin: 0px auto;
+}
+.button-depart, .button-return {
+    width: 50%;
+    height: 35px;
+    float: left;
+    /* float: left; */
+    text-align: center;
+    border-radius: 0px;
+    background: #fff;
+    font-size: 14px;
+    box-shadow: 0px 0px 8px 0px #ddd;
+    color: #c80718;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.line1 .price-info-position {
+    font-size: 28px;
+}
+.line2 {
+    font-size: 12px;
+}
+.price-info-position img {
+    max-width: 100%;
+    height: 25px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.start-circle {
+    left: -2px;
+}
+.line2 .stop-info {
+    font-size: 10px;
+    margin-top: 15px;
+}
+.line1bg, .line2bg, .line3bg {
+    background-position: 0px 28px;
+}
+.start-circle, .end-circle, .transit1-circle, .transit2-circle {
+    font-weight: 600;
+    color: #000000;
+}
+.price-proposals .price {
+    font-size: 24px;
+}
+.proposals {
+    font-size: 12px;
+}
+.price-proposals {
+    height: 75px;
+}
+.button-wrapper .btn-price {
+    height: 35px;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 8px;
+    margin-top: 0px;
+}
+.price-info {
+    padding: 0px 0px 0px 0px;
+}
+.price-info > .row::after {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.button-sort img{
+  width: 15px;
+}
+#datepicker-2{
+  z-index: -1; display: none;
+}
+
+input[type=checkbox]:checked + label:before {
+    font-size: 10px;
+    line-height: 14px;
+}
+}
+@media (max-width: 760px){
+  .checkbox-filter label:before {
+      width: 23px;
+      height: 23px;
+      top: 7px;
+      margin-left: 0px;
+  }
+  .price-info > .row::after {
+    width: 100%;
+}
+.checkbox-filter {
+    float: left;
+    margin-top: 0px;
+}
+.checkbox-filter label {
+    padding-left: 30px;
+}
+input[type=checkbox]:checked + label:before {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+  .button-sort img{
+    width: 23px;
+    height: 23px;
+  }
+  .popular-tab {
+      width: 43%;
+  }
+  .popular-tab-content-box {
+      width: 57%;
+  }
+  .popular-container .box-wrapper {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 50px 0px 0px 0px;
+  }
+  .block-country {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .first-block, .second-block, .third-block{
+    margin-bottom: 10px;
+  }
+  .popular-tab li:nth-child(n+9), .popular-tab-content li:nth-child(n+9) {
+    display: none !important;
+  }
+  .popular-tab-content > li {
+    padding: 21px 20px;
+    height: 56px;
+  }
+  .popular-tab li {
+    padding: 20px 0px 15px 30px;
+    font-size: 14px;
+    margin: 0px;
+  }
+  .popular-tab-content a {
+    font-size: 10px;
+  }
+  h3.carousel-title {
+      font-size: 20px;
+      margin-bottom: 85px;
+  }
+  .title-wrapper {
+      font-size: 20px;
+  }
+  .carousel-text {
+      width: 100%;
+      padding: 0px 15px;
+  }
+  .tickets-container {
+      padding: 50px 0px;
+  }
+  .tickets-1 {
+      height: auto;
+      max-height: inherit;
+      background: transparent;
+      box-shadow: none;
+      padding: 0px;
+      margin-bottom: 40px;
+  }
+  .tickets-1::before, .tickets-1-1::before, .tickets-1::after, .tickets-1-2::after{
+      display: none;
+  }
+  .tickets-container .row {
+      padding: 0px 15px;
+  }
+  .black-plane {
+      width: 12px;
+      height: 12px;
+      background-size: contain;
+      margin: 0px 5px;
+  }
+  .mobile-container{
+      background: #5e5e5e;
+      z-index: 99999;
+      position: absolute;
+      height: 510px;
+      width: 250px;
+      left: -250px;
+      top: -15px;
+      display: block;
+      transition: 1s;
+  }
+  .text-sort {
+      font-size: 18px;
+      font-weight: 400;
+      color: #fff;
+  }
+  .filter-duration label, .filter-stops > label, .filter-stops label {
+      font-weight: 400;
+      font-size: 18px;
+      color: #fff;
+      width: 100%;
+      line-height: 1;
+  }
+  .filter-stops label {
+      font-size: 16px;
+      line-height: 2.5;
+  }
+  .filter-stops > label{
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .items-stops{
+      display: block;
+      width: 100%;
+      float: left;
+      margin-top: 15px;
+      line-height: 1;
+      color: #fff;
+      font-size: 16px;
+  }
+  .filter-stops, .filter-duration {
+      height: auto;
+  }
+  .filters input[type="checkbox"] {
+      margin-left: 0px;
+      margin-right: 15px;
+  }
+  .filter-duration #dslider,   .filter-duration #dslider2 {
+      width: 100%;
+      float: left;
+      margin: 16px 0px 0px 0px;
+  }
+  .dslider-time {
+      width: 100%;
+      font-size: 14px;
+      color: #fff;
+  }
+  .button-sort {
+      margin-left: 15px;
+  }
+  .mobile-container .table-v {
+      display: block;
+      height: auto;
+      line-height: 1;
+  }
+  .mobile-container .col-xs-12{
+      padding-top: 25px;
+      padding-right: 25px;
+      float: left;
+  }
+  .filter-duration .ui-state-default, .filter-duration .ui-widget-content .ui-state-default {
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      top: -9px !important;
+      background: #fff !important;
+      border-radius: 100px;
+      box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.1);
+  }
+  #dslider, #dslider2 {
+      border: 0px;
+      height: 4px;
+  }
+.filters .row > .col-xs-12{
+  display: none;
+}
+.icon-close, .hamburger-icon {
+    width: 25px;
+    height: 21px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(../img/icon-finder.png);
+    background-position: 0 0;
+}
+.icon-close{
+    background-image: url(../img/cross-out.png);
+}
+.calendar-icon {
+    width: 20px;
+    height: 23px;
+    margin: 0px 6px;
+}
+.button-calendar {
+    width: 36px;
+    height: 36px;
+    padding: 6px 0px;
+    float: right;
+}
+.close-link, .hamburger-link{
+    width: 36px;
+    height: 36px;
+    float: left;
+    padding: 8px 0px;
+}
+.close-link{
+    margin: 15px 15px 0px 15px;
+}
+.mobile-v{
+  width: 100%;
+  padding: 0px 15px;
+  display: block;
+}
+.button-sort img{
+  margin-top: -3px;
+}
+.button-calendar::after {
+    right: 10px;
+    border: 7px solid transparent;
+    border-top: 7px solid transparent;
+    bottom: -15px;
+}
+.filters .row > .col-xs-12:last-child {
+    display: block;
+    padding: 0px;
+}
+.calendar-block {
+    margin-top: 15px;
+}
+#refresh_modal .modal-dialog {
+    margin: 150px auto;
+}
+.refresh-block p {
+    font-size: 14px;
+}
+.modal-body .refresh-block img {
+    margin: 20px auto;
+}
+.btn-refresh {
+    font-size: 16px;
+    margin: 22px auto;
+    margin-top: 0px;
+}
+#datepicker, #datepicker-2 {
+    width: 100%;
+    padding: 15px 0px;
+}
+.button-calendar-tabs {
+    width: 100%;
+    margin: 0px;
+    padding: 0px 15px;
+}
+#datepicker .ui-datepicker .ui-datepicker-prev, #datepicker-2 .ui-datepicker .ui-datepicker-prev {
+    left: 5px;
+    top: 0;
+}
+#datepicker .ui-datepicker .ui-datepicker-next, #datepicker-2 .ui-datepicker .ui-datepicker-next {
+    right: 15px;
+    top: 0;
+}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+    margin-top: -8px !important;
+}
+#datepicker .ui-widget.ui-widget-content, #datepicker-2 .ui-widget.ui-widget-content{
+  padding: 0px;
+}
+#datepicker .ui-widget-header, #datepicker-2 .ui-widget-header {
+    padding: 10px 0px;
+}
+.card-result .card-body {
+    padding: 0 0px;
+}
+.price-info .col-md-12{
+    padding: 0px 5px;
+}
+.price-info > .row {
+    padding-top: 20px;
+}
+.start-circle, .end-circle{
+    display: none;
+}
+.price-proposals {
+    height: 42px;
+    width: 60%;
+    float: left;
+    margin: 0px;
+    position: relative;
+}
+.price-proposals .price{
+  font-size: 20px;
+}
+.price-proposals .proposals{
+  margin-left: 15px;
+}
+.price-proposals .price, .price-proposals .proposals{
+  float: left;
+  line-height: 47px;
+}
+.button-wrapper {
+    float: left;
+    width: 40%;
+    position: relative;
+}
+.price-button {
+  background-image: none;
+  padding: 0px 0px 0px 15px;
+}
+.button-wrapper .btn-price {
+    height: 42px;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 8px;
+    margin-top: 0px;
+}
+.line1 .price-info-position {
+    font-size: 24px;
+}
+.price-info-position img {
+    height: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.price-info-position img:first-child {
+    margin-left: 15px;
+}
+.start-circle, .end-circle, .transit1-circle, .transit2-circle {
+    font-weight: 500;
+    color: #737373;
+}
+.price-info > .row:last-child::after {
+    border-bottom: 0px solid #ddd;
+}
+.price-button {
+    background-repeat: repeat-x;
+    background-image: url(../img/point.png);
+    background-position: left 0px;
+}
+.info-transit{
+    padding: 10px 10px;
+}
+.modal-body .row {
+    padding: 0px 0px;
+}
+#details_modal .modal-body .row .col-md-4:last-child {
+    padding-right: 0px;
+}
+.modal-body .btn-price {
+    height: 35px;
+    margin: 3px 0px;
+    line-height: 27px;
+}
+.modal-body .price {
+    font-size: 14px;
+    color: #c80718;
+}
+#details_modal .modal-body img {
+    height: 30px;
+    float: left;
+}
+.ui-datepicker .ui-datepicker-prev{
+  position: relative !important;
+  top: 2px;
+  left: 0px;
+  float: left;
+}
+.ui-datepicker .ui-datepicker-next {
+    position: relative !important;
+    top: 2px;
+    right: 0px;
+    float: right;
+}
+ul.popular-tab-content {
+    padding: 0px 0px;
+}
+}
+@media (min-width: 500px) and (max-width: 760px){
+.line3bg .transit1-circle {
+    left: 33%;
+}
+.line3bg .transit2-circle {
+    left: 67%;
+}
+.info-transit {
+  left: -52px;
+}
+}
+@media(max-width: 425px){
+  .start-circle, .end-circle, .transit1-circle, .transit2-circle {
+    padding-top: 15px;
+}
+.info-transit {
+    bottom: 50px;
+    left: -54px;
+}
+}
+@media (max-width: 375px){
+  .info-transit {
+    left: -55px;
+  }
+}
+@media (max-width: 320px){
+  .line2 {
+    font-size: 10px;
+  }
+  .line1 .price-info-position {
+    font-size: 18px;
+}
+}

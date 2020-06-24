@@ -1,0 +1,169 @@
+@media screen and (min-width: 768px) {
+	.col-flex-sm-12 {
+		width: 100%;
+	}
+	.col-flex-sm-11 {
+		width: 91.6666%;
+	}
+	.col-flex-sm-10 {
+		width: 83.3333%;
+	}
+	.col-flex-sm-9 {
+		width: 75%;
+	}
+	.col-flex-sm-8 {
+		width: 66.6666%;
+	}
+	.col-flex-sm-7 {
+		width: 58.3333%;
+	}
+	.col-flex-sm-6 {
+		width: 50%;
+	}
+	.col-flex-sm-5 {
+		width: 41.6666%;
+	}
+	.col-flex-sm-4 {
+		width: 33.3333%;
+	}
+	.col-flex-sm-3 {
+		width: 25%;
+	}
+	.col-flex-sm-2 {
+		width: 16.6666%;
+	}
+	.col-flex-sm-1 {
+		width: 8.3333%;
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+	.col-flex-md-12 {
+		width: 100%;
+	}
+	.col-flex-md-11 {
+		width: 91.6666%;
+	}
+	.col-flex-md-10 {
+		width: 83.3333%;
+	}
+	.col-flex-md-9 {
+		width: 75%;
+	}
+	.col-flex-md-8 {
+		width: 66.6666%;
+	}
+	.col-flex-md-7 {
+		width: 58.3333%;
+	}
+	.col-flex-md-6 {
+		width: 50%;
+	}
+	.col-flex-md-5 {
+		width: 41.6666%;
+	}
+	.col-flex-md-4 {
+		width: 33.3333%;
+	}
+	.col-flex-md-3 {
+		width: 25%;
+	}
+	.col-flex-md-2 {
+		width: 16.6666%;
+	}
+	.col-flex-md-1 {
+		width: 8.3333%;
+	}
+
+}
+
+@media screen and (min-width: 1199px) {
+	.col-flex-lg-12 {
+		width: 100%;
+	}
+	.col-flex-lg-11 {
+		width: 91.6666%;
+	}
+	.col-flex-lg-10 {
+		width: 83.3333%;
+	}
+	.col-flex-lg-9 {
+		width: 75%;
+	}
+	.col-flex-lg-8 {
+		width: 66.6666%;
+	}
+	.col-flex-lg-7 {
+		width: 58.3333%;
+	}
+	.col-flex-lg-6 {
+		width: 50%;
+	}
+	.col-flex-lg-5 {
+		width: 41.6666%;
+	}
+	.col-flex-lg-4 {
+		width: 33.3333%;
+	}
+	.col-flex-lg-3 {
+		width: 25%;
+	}
+	.col-flex-lg-2 {
+		width: 16.6666%;
+	}
+	.col-flex-lg-1 {
+		width: 8.3333%;
+	}
+
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 992px) {
+    .fmenu li {
+        margin-right: 0px;
+        display: block;
+    }
+    .__margin-top {
+        margin-top: 0px;
+    }
+    .box-flag-inner  {
+        width: 25%;
+    }
+    .popular-tab li:nth-child(n+7),
+    .popular-tab-content li:nth-child(n+7){
+        display: none;
+    }
+
+    .logo {
+    	left: 15px;
+	}
+	.box-flag-inner {
+		text-align: left;
+	}
+    .container-progress label {
+        font-size: 13px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+	.row-flex.__margin [class^="col-"].no-margin-bottom-xs {
+		margin-bottom: 0px;
+	}
+    .footer-contact {
+        background-image: url(../img/bg-grey-line.jpg);
+    }
+        .container-progress label {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .not-found-404 {
+        width: 280px;
+    }
+    .box-flag-inner  {
+        width: 50%;
+    }
+    .container-progress label {
+        font-size: 11px;
+    }
+}
